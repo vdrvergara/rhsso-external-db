@@ -1,0 +1,7 @@
+[0;33mWARN Ping protocol openshift.DNS_PING is deprecated, replacing with dns.DNS_PING instead.[0m
+INFO Configuring JGroups discovery protocol to dns.DNS_PING
+INFO Creating JGroups keystore via OpenShift's service serving x509 certificate secrets..
+INFO JGroups keystore successfully created at: /opt/eap/keystores/jgroups-keystore.jks
+INFO Creating HTTPS keystore via OpenShift's service serving x509 certificate secrets..
+INFO HTTPS keystore successfully created at: /opt/eap/keystores/https-keystore.jks
+INFO Creating RH-SSO truststore..

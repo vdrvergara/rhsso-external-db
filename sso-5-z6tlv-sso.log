@@ -1,0 +1,17 @@
+[0;33mWARN There is a problem with your service configuration![0m
+[0;33mWARN You provided following database mapping (via TX_SERVICE_PREFIX_MAPPING environment variable): sso-mariadb=DB. To configure datasources we expect SSO_MARIADB_SERVICE_HOST and SSO_MARIADB_SERVICE_PORT to be set.[0m
+[0;33mWARN [0m
+[0;33mWARN Current values:[0m
+[0;33mWARN [0m
+[0;33mWARN SSO_MARIADB_SERVICE_HOST: [0m
+[0;33mWARN SSO_MARIADB_SERVICE_PORT: [0m
+[0;33mWARN [0m
+[0;33mWARN Please make sure you provided correct service name and prefix in the mapping. Additionally please check that you do not set portalIP to None in the sso-mariadb service. Headless services are not supported at this time.[0m
+[0;33mWARN [0m
+[0;33mWARN The mariadb datasource for DB service WILL NOT be configured.[0m
+INFO Configuring JGroups discovery protocol to dns.DNS_PING
+INFO Creating JGroups keystore via OpenShift's service serving x509 certificate secrets..
+INFO JGroups keystore successfully created at: /opt/eap/keystores/jgroups-keystore.jks
+INFO Creating HTTPS keystore via OpenShift's service serving x509 certificate secrets..
+INFO HTTPS keystore successfully created at: /opt/eap/keystores/https-keystore.jks
+INFO Creating RH-SSO truststore..

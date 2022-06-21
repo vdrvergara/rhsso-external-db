@@ -1,0 +1,106 @@
+INFO Configuring JGroups discovery protocol to dns.DNS_PING
+INFO Creating JGroups keystore via OpenShift's service serving x509 certificate secrets..
+INFO JGroups keystore successfully created at: /opt/eap/keystores/jgroups-keystore.jks
+INFO Creating HTTPS keystore via OpenShift's service serving x509 certificate secrets..
+INFO HTTPS keystore successfully created at: /opt/eap/keystores/https-keystore.jks
+INFO Creating RH-SSO truststore..
+INFO RH-SSO truststore successfully created at: /opt/eap/keystores/truststore.jks
+Warning: use -cacerts option to access cacerts keystore
+INFO Importing certificates from system's Java CA certificate bundle into RH-SSO truststore..
+INFO Successfully imported certificates from system's Java CA certificate bundle into RH-SSO truststore at: /opt/eap/keystores/truststore.jks
+INFO Using PicketBox SSL configuration.
+INFO Configuring JGroups cluster traffic encryption protocol to SYM_ENCRYPT.
+[0;33mWARN Detected missing JGroups encryption configuration, the communication within the cluster WILL NOT be encrypted.[0m
+Added 'DPMw5XDu' to '/opt/eap/standalone/configuration/keycloak-add-user.json', restart server to load user
+INFO Access log is disabled, ignoring configuration.
+You are disconnected at the moment. Type 'connect' to connect to the server or 'help' for the list of supported commands.
+[[;91;109mdisconnected [0m/] embed-server --std-out=echo  --server-config=standalone-openshift.xml
+[0m11:30:43,161 INFO  [org.jboss.modules] (CLI command executor) JBoss Modules version 1.12.0.Final-redhat-00001
+[0m[0m11:30:43,373 INFO  [org.jboss.msc] (CLI command executor) JBoss MSC version 1.4.12.Final-redhat-00001
+[0m[0m11:30:43,459 INFO  [org.jboss.threads] (CLI command executor) JBoss Threads version 2.4.0.Final-redhat-00001
+[0m[0m11:30:43,768 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Core 15.0.8.Final-redhat-00001 starting
+[0m[32m11:30:43,769 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	com.ibm.jsse2.overrideDefaultTLS = true
+	file.encoding = ANSI_X3.4-1968
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/eap/jboss-modules.jar
+	java.class.version = 55.0
+	java.home = /usr/lib/jvm/java-11-openjdk-11.0.15.0.10-2.el8_6.x86_64
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 11.0.15+10-LTS
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 11
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Red Hat, Inc.
+	java.vendor.url = https://www.redhat.com/
+	java.vendor.url.bug = https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%208&component=java-11-openjdk
+	java.vendor.version = 18.9
+	java.version = 11.0.15
+	java.version.date = 2022-04-19
+	java.vm.compressedOopsMode = 32-bit
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 11
+	java.vm.vendor = Red Hat, Inc.
+	java.vm.version = 11.0.15+10-LTS
+	jboss.home.dir = /opt/eap
+	jboss.host.name = sso-6-wknmm
+	jboss.modules.dir = /opt/eap/modules
+	jboss.modules.settings.xml.url = file:///opt/jboss/container/wildfly/s2i/galleon/settings.xml
+	jboss.modules.system.pkgs = com.sun.java.swing
+	jboss.node.name = sso-6-wknmm
+	jboss.qualified.host.name = sso-6-wknmm
+	jboss.server.base.dir = /opt/eap/standalone
+	jboss.server.config.dir = /opt/eap/standalone/configuration
+	jboss.server.content.dir = /opt/eap/standalone/data/content
+	jboss.server.data.dir = /opt/eap/standalone/data
+	jboss.server.deploy.dir = /opt/eap/standalone/data/content
+	jboss.server.log.dir = /opt/eap/standalone/log
+	jboss.server.name = sso-6-wknmm
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/eap/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/opt/eap/bin/jboss-cli-logging.properties
+	module.path = /opt/eap/modules
+	org.jboss.boot.log.file = /opt/eap/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.wildfly.logging.embedded = false
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.18.0-305.45.1.el8_4.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-11.0.15.0.10-2.el8_6.x86_64/lib
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/eap/jboss-modules.jar -mp /opt/eap/modules org.jboss.as.cli
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = ANSI_X3.4-1968
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jboss
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = GMT
+[0m[32m11:30:43,771 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Djboss.modules.settings.xml.url=file:///opt/jboss/container/wildfly/s2i/galleon/settings.xml --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djboss.modules.system.pkgs=com.sun.java.swing -Dcom.ibm.jsse2.overrideDefaultTLS=true -Dlogging.configuration=file:/opt/eap/bin/jboss-cli-logging.properties 
+[0mWARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.wildfly.extension.elytron.SSLDefinitions (jar:file:/opt/jboss/container/wildfly/s2i/galleon/galleon-m2-repository/org/wildfly/core/wildfly-elytron-integration/15.0.8.Final-redhat-00001/wildfly-elytron-integration-15.0.8.Final-redhat-00001.jar!/) to method com.sun.net.ssl.internal.ssl.Provider.isFIPS()
+WARNING: Please consider reporting this to the maintainers of org.wildfly.extension.elytron.SSLDefinitions
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[0m11:30:47,972 INFO  [org.wildfly.security] (ServerService Thread Pool -- 30) ELY00001: WildFly Elytron version 1.15.11.Final-redhat-00002
+[0m[0m11:30:49,255 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 12) WFLYCTL0033: Extension 'security' is deprecated and may not be supported in future versions
+[0m
